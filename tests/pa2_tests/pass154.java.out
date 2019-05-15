@@ -1,0 +1,73 @@
+********** miniJava Compiler (PA2) **********
+Syntactic Analysis ... 
+Syntactic Analysis OK
+======= AST Display =========================
+Package
+  ClassDeclList [2]
+  . ClassDecl
+  .   "MainClass" classname
+  .   FieldDeclList [0]
+  .   MethodDeclList [1]
+  .   . (public static) MethodDecl
+  .   .   VOID BaseType
+  .   .   "main" methodname
+  .   .   ParameterDeclList [1]
+  .   .   . ParameterDecl
+  .   .   .   ArrayType
+  .   .   .     ClassType
+  .   .   .       "String" Identifier
+  .   .   .   "args"parametername 
+  .   .   StmtList [0]
+  . ClassDecl
+  .   "SuperClass" classname
+  .   FieldDeclList [0]
+  .   MethodDeclList [4]
+  .   . (public) MethodDecl
+  .   .   VOID BaseType
+  .   .   "setWorth" methodname
+  .   .   ParameterDeclList [1]
+  .   .   . ParameterDecl
+  .   .   .   INT BaseType
+  .   .   .   "worth"parametername 
+  .   .   StmtList [1]
+  .   .   . AssignStmt
+  .   .   .   IdRef
+  .   .   .     "integer" Identifier
+  .   .   .   RefExpr
+  .   .   .     IdRef
+  .   .   .       "worth" Identifier
+  .   . (public) MethodDecl
+  .   .   INT BaseType
+  .   .   "getWorth" methodname
+  .   .   ParameterDeclList [0]
+  .   .   StmtList [1]
+  .   .   . ReturnStmt
+  .   .   .   RefExpr
+  .   .   .     QualRef
+  .   .   .       "integer" Identifier
+  .   .   .       ThisRef
+  .   . (public) MethodDecl
+  .   .   VOID BaseType
+  .   .   "setTruth" methodname
+  .   .   ParameterDeclList [1]
+  .   .   . ParameterDecl
+  .   .   .   BOOLEAN BaseType
+  .   .   .   "truth"parametername 
+  .   .   StmtList [1]
+  .   .   . AssignStmt
+  .   .   .   IdRef
+  .   .   .     "bool" Identifier
+  .   .   .   RefExpr
+  .   .   .     IdRef
+  .   .   .       "truth" Identifier
+  .   . (public) MethodDecl
+  .   .   INT BaseType
+  .   .   "getTruth" methodname
+  .   .   ParameterDeclList [0]
+  .   .   StmtList [1]
+  .   .   . ReturnStmt
+  .   .   .   RefExpr
+  .   .   .     QualRef
+  .   .   .       "bool" Identifier
+  .   .   .       ThisRef
+=============================================

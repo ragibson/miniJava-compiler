@@ -1,0 +1,11 @@
+********** miniJava Compiler (PA2) **********
+Syntactic Analysis ... 
+Syntactic Analysis OK
+======= AST Display =========================
+Package
+  ClassDeclList [1]
+  . ClassDecl
+  .   "Test" classname
+  .   FieldDeclList [0]
+  .   MethodDeclList [0]
+=============================================

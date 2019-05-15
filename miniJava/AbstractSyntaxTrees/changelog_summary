@@ -1,0 +1,13 @@
+Added NullLiteral class extending Terminal
+Added visitNullLiteral to Visitor interface
+Added visitNullLiteral to ASTDisplay
+Added NULL to TypeKind
+
+Added Declaration member to Identifier and Reference
+Added SourcePosition to Identifier constructor
+Added TypeDenoter field to AST
+
+Ensure AST never has null SourcePosition
+
+Added CodeGenerator.RuntimeEntityDescription
+Added RuntimeEntityDescription to Declaration

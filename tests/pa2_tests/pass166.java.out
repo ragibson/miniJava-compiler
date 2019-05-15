@@ -1,0 +1,35 @@
+********** miniJava Compiler (PA2) **********
+Syntactic Analysis ... 
+Syntactic Analysis OK
+======= AST Display =========================
+Package
+  ClassDeclList [1]
+  . ClassDecl
+  .   "Test" classname
+  .   FieldDeclList [0]
+  .   MethodDeclList [1]
+  .   . (public) MethodDecl
+  .   .   VOID BaseType
+  .   .   "p" methodname
+  .   .   ParameterDeclList [1]
+  .   .   . ParameterDecl
+  .   .   .   INT BaseType
+  .   .   .   "a"parametername 
+  .   .   StmtList [2]
+  .   .   . CallStmt
+  .   .   .   QualRef
+  .   .   .     "p" Identifier
+  .   .   .     ThisRef
+  .   .   .   ExprList [2]
+  .   .   .   . LiteralExpr
+  .   .   .   .   "2" IntLiteral
+  .   .   .   . LiteralExpr
+  .   .   .   .   "3" IntLiteral
+  .   .   . AssignStmt
+  .   .   .   QualRef
+  .   .   .     "v" Identifier
+  .   .   .     IdRef
+  .   .   .       "a" Identifier
+  .   .   .   LiteralExpr
+  .   .   .     "4" IntLiteral
+=============================================

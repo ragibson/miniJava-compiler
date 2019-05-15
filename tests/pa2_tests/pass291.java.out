@@ -1,0 +1,113 @@
+********** miniJava Compiler (PA2) **********
+Syntactic Analysis ... 
+Syntactic Analysis OK
+======= AST Display =========================
+Package
+  ClassDeclList [1]
+  . ClassDecl
+  .   "Refs" classname
+  .   FieldDeclList [0]
+  .   MethodDeclList [1]
+  .   . (public) MethodDecl
+  .   .   VOID BaseType
+  .   .   "p" methodname
+  .   .   ParameterDeclList [0]
+  .   .   StmtList [11]
+  .   .   . AssignStmt
+  .   .   .   IdRef
+  .   .   .     "a" Identifier
+  .   .   .   BinaryExpr
+  .   .   .     "+" Operator
+  .   .   .       BinaryExpr
+  .   .   .         "+" Operator
+  .   .   .           LiteralExpr
+  .   .   .             "1" IntLiteral
+  .   .   .           LiteralExpr
+  .   .   .             "2" IntLiteral
+  .   .   .       LiteralExpr
+  .   .   .         "3" IntLiteral
+  .   .   . AssignStmt
+  .   .   .   QualRef
+  .   .   .     "b" Identifier
+  .   .   .     IdRef
+  .   .   .       "a" Identifier
+  .   .   .   LiteralExpr
+  .   .   .     "4" IntLiteral
+  .   .   . AssignStmt
+  .   .   .   QualRef
+  .   .   .     "c" Identifier
+  .   .   .     QualRef
+  .   .   .       "b" Identifier
+  .   .   .       IdRef
+  .   .   .         "a" Identifier
+  .   .   .   LiteralExpr
+  .   .   .     "5" IntLiteral
+  .   .   . AssignStmt
+  .   .   .   ThisRef
+  .   .   .   RefExpr
+  .   .   .     IdRef
+  .   .   .       "that" Identifier
+  .   .   . AssignStmt
+  .   .   .   QualRef
+  .   .   .     "that" Identifier
+  .   .   .     ThisRef
+  .   .   .   LiteralExpr
+  .   .   .     "6" IntLiteral
+  .   .   . AssignStmt
+  .   .   .   IdRef
+  .   .   .     "x" Identifier
+  .   .   .   RefExpr
+  .   .   .     IxRef
+  .   .   .       IdRef
+  .   .   .         "a" Identifier
+  .   .   .       LiteralExpr
+  .   .   .         "7" IntLiteral
+  .   .   . AssignStmt
+  .   .   .   IxRef
+  .   .   .     IdRef
+  .   .   .       "a" Identifier
+  .   .   .     LiteralExpr
+  .   .   .       "8" IntLiteral
+  .   .   .   RefExpr
+  .   .   .     IdRef
+  .   .   .       "c" Identifier
+  .   .   . CallStmt
+  .   .   .   QualRef
+  .   .   .     "p" Identifier
+  .   .   .     IdRef
+  .   .   .       "c" Identifier
+  .   .   .   ExprList [1]
+  .   .   .   . LiteralExpr
+  .   .   .   .   "9" IntLiteral
+  .   .   . VarDeclStmt
+  .   .   .   VarDecl
+  .   .   .     ClassType
+  .   .   .       "Foo" Identifier
+  .   .   .     "x" varname
+  .   .   .   RefExpr
+  .   .   .     QualRef
+  .   .   .       "d" Identifier
+  .   .   .       QualRef
+  .   .   .         "c" Identifier
+  .   .   .         QualRef
+  .   .   .           "b" Identifier
+  .   .   .           IdRef
+  .   .   .             "a" Identifier
+  .   .   . VarDeclStmt
+  .   .   .   VarDecl
+  .   .   .     ArrayType
+  .   .   .       ClassType
+  .   .   .         "Foo" Identifier
+  .   .   .     "af" varname
+  .   .   .   NewArrayExpr
+  .   .   .     ClassType
+  .   .   .       "Foo" Identifier
+  .   .   .     LiteralExpr
+  .   .   .       "10" IntLiteral
+  .   .   . AssignStmt
+  .   .   .   IdRef
+  .   .   .     "that" Identifier
+  .   .   .   NewObjectExpr
+  .   .   .     ClassType
+  .   .   .       "Test" Identifier
+=============================================

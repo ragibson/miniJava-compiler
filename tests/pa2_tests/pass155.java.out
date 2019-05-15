@@ -1,0 +1,102 @@
+********** miniJava Compiler (PA2) **********
+Syntactic Analysis ... 
+Syntactic Analysis OK
+======= AST Display =========================
+Package
+  ClassDeclList [2]
+  . ClassDecl
+  .   "MainClass" classname
+  .   FieldDeclList [0]
+  .   MethodDeclList [1]
+  .   . (public static) MethodDecl
+  .   .   VOID BaseType
+  .   .   "main" methodname
+  .   .   ParameterDeclList [1]
+  .   .   . ParameterDecl
+  .   .   .   ArrayType
+  .   .   .     ClassType
+  .   .   .       "String" Identifier
+  .   .   .   "args"parametername 
+  .   .   StmtList [1]
+  .   .   . VarDeclStmt
+  .   .   .   VarDecl
+  .   .   .     ClassType
+  .   .   .       "SecondSubClass" Identifier
+  .   .   .     "newobj" varname
+  .   .   .   NewObjectExpr
+  .   .   .     ClassType
+  .   .   .       "SecondSubClass" Identifier
+  . ClassDecl
+  .   "SuperClass" classname
+  .   FieldDeclList [0]
+  .   MethodDeclList [1]
+  .   . (private) MethodDecl
+  .   .   VOID BaseType
+  .   .   "fillup" methodname
+  .   .   ParameterDeclList [4]
+  .   .   . ParameterDecl
+  .   .   .   BOOLEAN BaseType
+  .   .   .   "open"parametername 
+  .   .   . ParameterDecl
+  .   .   .   ArrayType
+  .   .   .     INT BaseType
+  .   .   .   "jar"parametername 
+  .   .   . ParameterDecl
+  .   .   .   INT BaseType
+  .   .   .   "marble"parametername 
+  .   .   . ParameterDecl
+  .   .   .   INT BaseType
+  .   .   .   "upto"parametername 
+  .   .   StmtList [2]
+  .   .   . VarDeclStmt
+  .   .   .   VarDecl
+  .   .   .     INT BaseType
+  .   .   .     "index" varname
+  .   .   .   LiteralExpr
+  .   .   .     "0" IntLiteral
+  .   .   . IfStmt
+  .   .   .   BinaryExpr
+  .   .   .     "==" Operator
+  .   .   .       RefExpr
+  .   .   .         IdRef
+  .   .   .           "open" Identifier
+  .   .   .       LiteralExpr
+  .   .   .         "true" BooleanLiteral
+  .   .   .   BlockStmt
+  .   .   .     StatementList [1]
+  .   .   .     . WhileStmt
+  .   .   .     .   BinaryExpr
+  .   .   .     .     "<" Operator
+  .   .   .     .       RefExpr
+  .   .   .     .         IdRef
+  .   .   .     .           "index" Identifier
+  .   .   .     .       RefExpr
+  .   .   .     .         IdRef
+  .   .   .     .           "upto" Identifier
+  .   .   .     .   BlockStmt
+  .   .   .     .     StatementList [2]
+  .   .   .     .     . AssignStmt
+  .   .   .     .     .   IxRef
+  .   .   .     .     .     IdRef
+  .   .   .     .     .       "ownjar" Identifier
+  .   .   .     .     .     RefExpr
+  .   .   .     .     .       IdRef
+  .   .   .     .     .         "index" Identifier
+  .   .   .     .     .   RefExpr
+  .   .   .     .     .     IxRef
+  .   .   .     .     .       IdRef
+  .   .   .     .     .         "jar" Identifier
+  .   .   .     .     .       RefExpr
+  .   .   .     .     .         IdRef
+  .   .   .     .     .           "index" Identifier
+  .   .   .     .     . AssignStmt
+  .   .   .     .     .   IxRef
+  .   .   .     .     .     IdRef
+  .   .   .     .     .       "jar" Identifier
+  .   .   .     .     .     RefExpr
+  .   .   .     .     .       IdRef
+  .   .   .     .     .         "index" Identifier
+  .   .   .     .     .   RefExpr
+  .   .   .     .     .     IdRef
+  .   .   .     .     .       "marble" Identifier
+=============================================
