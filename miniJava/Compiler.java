@@ -41,7 +41,7 @@ public class Compiler {
 
 	public static void main(String[] args) {
 		// Use to test different portions of the compiler
-		CompilerStage finalStage = CompilerStage.PARSER;
+		CompilerStage finalStage = CompilerStage.CODE_GENERATION;
 		
 		if (args.length > 1) {
 		    switch (args[1]) {
